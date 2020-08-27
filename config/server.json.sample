@@ -34,9 +34,10 @@
   },
   "influxdb": {
     "enable": true,
-    "hosts": "http://localhost:8086",
+    "hosts": "http://localhost:8086",  (you can also point to HTTPS InfluxDB)
     "db": "burrowx",
     "username": "",
     "pwd": ""
+    "insecureskipverify": false        (use this flag in order to skip TLS verification)
   }
 }
